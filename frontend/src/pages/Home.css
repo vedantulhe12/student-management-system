@@ -1,0 +1,79 @@
+/* Home.css */
+
+.dashboard-container {
+    padding: 2rem;
+    background-color: #f0f5ff; /* Light blue background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1d4ed8; /* Dark blue */
+    margin-bottom: 2rem;
+}
+
+.dashboard-row {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+.dashboard-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-align: center;
+    background-color: #ffffff; /* White card background */
+}
+
+.dashboard-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-title-with-icon {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e293b; /* Dark text color */
+}
+
+.card-title-with-icon .anticon {
+    font-size: 1.5rem;
+    color: #1d4ed8;
+    margin-right: 0.5rem;
+}
+
+.dashboard-card .ant-btn-primary {
+    background-color: #1d4ed8;
+    border: none;
+}
+
+.dashboard-card .ant-btn-primary:hover {
+    background-color: #3b82f6;
+}
+
+.dashboard-card .ant-btn-default {
+    color: #1d4ed8;
+    border-color: #1d4ed8;
+}
+
+.dashboard-card .ant-btn-default:hover {
+    color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+/* Add margin to the bottom of the first row for better spacing */
+.dashboard-row:nth-of-type(1) {
+    margin-bottom: 2rem; /* Adjust this value as needed */
+}
+
+/* Optional: If you want more spacing globally between all elements */
+.dashboard-container {
+    gap: 2rem; /* Create a consistent gap between elements */
+}
